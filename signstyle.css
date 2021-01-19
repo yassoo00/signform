@@ -1,0 +1,38 @@
+body
+{
+    background-image: url("https://lh3.googleusercontent.com/proxy/A1-qTKpDhULBz6CSavCEygN7pP0zB5idBD3m_Gw-USrmBwBGXoFQEBS3_CF2QNW0OKUOz68zVDNIg2uo5Z01ODgiDWyExxwm5eyR");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#block
+{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 7em;
+    border-style: hidden;
+    border-radius: 30em;
+    box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.199), 0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.205);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.267);
+    padding: 5px;
+}
+
+#inform
+{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 9em;   
+}
+
+#logo
+{
+    max-width: 200px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding-top: 5rem;
+}
+

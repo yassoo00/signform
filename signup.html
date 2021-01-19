@@ -7,35 +7,57 @@
 </head>
 
     <body>
-        <form method="POST">
+        <form id="block" method="POST">
 
-            <label>First-Name</label>
-            <input type="text" name="fname">
+            <!--logo-->
+            <div id="logo">
+            <h1><center><b>LOGO</b></center></h1>
+            </div>
 
-            <label>Last-Name</label>
-            <input type="text" name="lname"><br>
+            <!--info box -->
+            <div id="inform">
 
-            <label>E-mail</label>
-            <input type="email" name="mail"><br>
+                <div id="name">
+                <label>First-Name</label>
+                <input type="text">
 
-            <label>Phone</label>
-            <input type="phone" name="phone"><br>
+                <label>Last-Name</label>
+                <input type="text" ><br>
+                </div>
 
+                <div id="email">
+                <label>E-mail</label>
+                <input type="email" name="mail"><br>
+                </div>
 
-            <label>Gender</label>
-            <select name="Gender">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-            <br>
+                <div id="call">
+                <label>Phone</label>
+                <input type="phone" name="phone"><br>
+                </div>
+                
+                <div id="gene">
+                <label>Gender</label>
+                <select name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+                </div>
 
-            <label>password</label>
-            <input type="password" name="pass"><br>
+                <div id="passandco">
+                <label>password</label>
+                <input type="password" name="pass"><br>
 
-            <label>confirm password</label>
-            <input type="password" name="conpass"><br>
+                <label>confirm password</label>
+                <input type="password" name="conpass"><br>
+                </div>
 
-            <input type="submit" name="go" value="Sign-up">
+                <!--button-->
+                <div id="btngo">
+                <input type="submit" name="go" value="Sign-up">
+                </div>
+                
+            </div>
         </form>
     </body>
 </html>
