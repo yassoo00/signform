@@ -4,9 +4,16 @@
     <title>Signup</title>
 
     <link href="signstyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
 </head>
 
     <body>
+        <button onclick="document.getElementById('block').style.display='block'">signup</button>
+        <div id="close">
+            <span onclick="document.getElementById('block').style.display='none'"></span>
+        </div>
         <form id="block" method="POST">
 
             <!--logo-->
@@ -18,26 +25,23 @@
             <div id="inform">
 
                 <div id="name">
-                <label>First-Name</label>
-                <input type="text" name="fname">
+                
+                <input type="text" name="fname" placeholder="First-Name" class="iput">
 
-                <label>Last-Name</label>
-                <input type="text" name="lname"><br>
+                <input type="text" name="lname" placeholder="Last-Name"><br>
                 </div>
 
                 <div id="email">
-                <label>E-mail</label>
-                <input type="email" name="mail"><br>
+
+                <input type="email" name="mail" placeholder="E-mail"><br>
                 </div>
 
                 <div id="call">
-                <label>Phone</label>
-                <input type="phone" name="phone"><br>
+                <input type="phone" name="phone" placeholder="Phone"><br>
                 </div>
                 
-                <div id="gene">
-                <label>Gender</label>
-                <select name="Gender">
+                <div >
+                <select name="Gender" id="gene">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
@@ -45,16 +49,16 @@
                 </div>
 
                 <div id="passandco">
-                <label>password</label>
-                <input type="password" name="pass"><br>
+                <input type="password" name="pass" placeholder="password"><br>
 
-                <label>confirm password</label>
-                <input type="password" name="conpass"><br>
+                <input type="password" name="conpass" placeholder="confirm password"><br>
                 </div>
 
                 <!--button-->
-                <div id="btngo">
-                <input type="submit" name="go" value="Sign-up">
+                <div >
+                <button id="gogbtn"><i  class='fab fa-google'></i></button>
+                <button id="btngo"><i id="inbtn" class="fa fa-play"></i></button>
+                <button id="facbtn"><i class='fab fa-facebook-f'></i></button>
                 </div>
                 
             </div>

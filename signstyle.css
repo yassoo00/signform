@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("https://lh3.googleusercontent.com/proxy/A1-qTKpDhULBz6CSavCEygN7pP0zB5idBD3m_Gw-USrmBwBGXoFQEBS3_CF2QNW0OKUOz68zVDNIg2uo5Z01ODgiDWyExxwm5eyR");
+    background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,22 +17,166 @@ body
     text-align: center;
     background-color: rgba(0, 0, 0, 0.267);
     padding: 5px;
+    display:none;
+    animation:appear 0.8s
 }
 
+@keyframes appear
+{
+    from{opacity:0} to{opacity:1}
+}
 #inform
 {
     max-width: 600px;
     margin: auto;
     margin-top: 3em;
-    margin-bottom: 9em;   
+    margin-bottom: -3em;   
 }
 
 #logo
 {
     max-width: 200px;
     margin: auto;
-    margin-top: 1em;
+    margin-top: 1px;
     margin-bottom: 0.5em;
     padding-top: 5rem;
+}
+
+#btngo
+{
+    display: inline-block;
+    font-size:24px;
+    background-color:#4DC411;
+    color:#FFFFFF;
+    max-width: 100px;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 50%;
+    padding: 17px;
+    box-shadow: 0 4px #999;
+
+}
+
+#btngo:hover 
+{
+    background-color: #3e8e41
+}
+
+#btngo:active 
+{
+  background-color: #4DC411;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+#inbtn
+{
+    color: #FFFFFF;
+}
+
+#gogbtn
+{
+    display: inline-block;
+    font-size:14px;
+    background-color:#F92C2C;
+    color:#FFFFFF;
+    max-width: 100px;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px #999;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+#gogbtn:hover 
+{
+    background-color: #FC1313
+}
+
+#gogbtn:active 
+{
+  background-color: #FB8E8E;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+#facbtn
+{
+    display: inline-block;
+    font-size:14px;
+    background-color:rgb(46, 58, 230);
+    color:#FFFFFF;
+    max-width: 100px;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px #999;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+#facbtn:hover 
+{
+    background-color: #0016FF
+}
+
+#facbtn:active 
+{
+  background-color: #6A74F7;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+input[type=text]
+{
+    margin-top: 0.6em;
+    border: none;
+    border-bottom:4px solid #4DC411;
+    opacity: 1;
+    background: transparent;
+}
+
+input[type=email]
+{
+    margin-top: 0.6em;
+    border: none;
+    border-bottom:4px solid #4DC411;
+    opacity: 1;
+    background: transparent;
+}
+
+input[type=phone]
+{
+    margin-top: 0.6em;
+    border: none;
+    border-bottom:4px solid #4DC411;
+    opacity: 1;
+    background: transparent;
+}
+
+#gene
+{
+    margin-top: 0.6em;
+    border: none;
+    border-bottom:4px solid #4DC411;
+    opacity: 1;
+    background: transparent;
+}
+
+
+input[type=password]
+{
+    margin-top: 0.6em;
+    border: none;
+    border-bottom:4px solid #4DC411;
+    opacity: 1;
+    background: transparent;
 }
 
