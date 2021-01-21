@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Signup</title>
-
     <link href="signstyle.css" rel="stylesheet" type="text/css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     
@@ -11,9 +10,10 @@
     <body>
         <div id="wel">
             <h1>Welcome</h1>
+            <button id = 'signup' onclick="document.getElementById('signup_form').style.display='block';document.getElementById('wel').style.display='none'">Sign Up</button>
+        <button id = 'login' onclick="document.getElementById('login_form').style.display='block';document.getElementById('wel').style.display='none'">Login</button>
         </div>
-        <button id = 'signup' onclick="document.getElementById('signup_form').style.display='block';document.getElementById('login_form').style.display='none';document.getElementById('wel').style.display='none'">Sign Up</button>
-        <button id = 'login' onclick="document.getElementById('login_form').style.display='block';document.getElementById('signup_form').style.display='none';document.getElementById('wel').style.display='none'">Login</button>
+        
         <form id="signup_form" method="POST">
             <div>
                 <span id="close" onclick="document.getElementById('wel').style.display='block';document.getElementById('signup_form').style.display='none'">&times;</span>
