@@ -1,203 +1,217 @@
 /*background of form*/
-body
-{
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+html {
+  background-image: url("https://astylecollector.files.wordpress.com/2015/11/melbourne-city-view-buildings-eureka-skydeck.jpg");
+  background-repeat: no-repeat;
+  background-size: 1900px 1000px;
+  background-attachment: fixed;
+  background-origin: content-box;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.78);
+  min-height: 100%;
 }
 
-
 /*modal appearance*/
-#block
-{
-    max-width: 500px;
-    margin: auto;
-    margin-top: 7em;
-    border-style: hidden;
-    border-radius: 30em;
-    box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.199), 0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.205);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.267);
-    padding: 5px;
-    display:none;
-    animation:appear 0.8s
+#signup_form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 7em;
+  border-style: initial;
+  border-radius: 5em;
+  box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.705),
+    0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.822);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding-bottom: 7em;
+  display: none;
+  animation: appear 0.8s;
+}
+#login_form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 7em;
+  padding-bottom: 7em;
+  border-style: initial;
+  border-radius: 5em;
+  box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.705),
+    0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.822);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.267);
+
+  display: none;
+  animation: appear 0.8s;
 }
 
 /*modal animation*/
 
-@keyframes appear
-{
-    from{opacity:0} to{opacity:1}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-#inform
-{
-    max-width: 600px;
-    margin: auto;
-    margin-top: 3em;
-    margin-bottom: -3em;   
+#inform {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: -3em;
 }
 
-/*close button*/
-#close
-{
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    padding: 5px 7px;
-}
+
 
 /*LOGO*/
 
-#logo
-{
-    max-width: 200px;
-    margin: auto;
-    margin-top: -30px;
-    margin-bottom: 1.5em;
-    padding-top: 4rem;
+#logo {
+  max-width: 200px;
+  margin: auto;
+  margin-top: -30px;
+  margin-bottom: 1.5em;
+  padding-top: 4rem;
+  color: #ffffff;
 }
-
+#wel {
+  padding-top: 180px;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-family:Arial, Helvetica, Arial, sans-serif;
+}
 
 /*textboxes*/
 
-input[type=text]
-{
-    margin-top: 0.6em;
-    border: none;
-    border-bottom:4px solid #4DC411;
-    opacity: 1;
-    background: transparent;
-}
-
-input[type=email]
-{
-    margin-top: 0.6em;
-    border: none;
-    border-bottom:4px solid #4DC411;
-    opacity: 1;
-    background: transparent;
-}
-
-input[type=phone]
-{
-    margin-top: 0.6em;
-    border: none;
-    border-bottom:4px solid #4DC411;
-    opacity: 1;
-    background: transparent;
-}
-
-#gene
-{
-    margin-top: 0.6em;
-    border: none;
-    border-bottom:4px solid #4DC411;
-    opacity: 1;
-    background: transparent;
+input {
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 
-input[type=password]
-{
-    margin-top: 0.6em;
-    border: none;
-    border-bottom:4px solid #4DC411;
-    opacity: 1;
-    background: transparent;
+#gene {
+  width: 200px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
 }
 
 /*buttons*/
 
-#btngo
-{
-    display: inline-block;
-    font-size:24px;
-    background-color:#4DC411;
-    color:#FFFFFF;
-    max-width: 100px;
-    margin: auto;
-    margin-top: 4em;
-    margin-bottom: 2em;
-    border: none;
-    border-radius: 50%;
-    padding: 17px;
-    box-shadow: 0 4px #999;
+#btngo {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  background-color: crimson;
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
 
+  margin-bottom: 20px;
+  height: 40px;
+  width: 200px;
 }
 
-#btngo:hover 
-{
-    background-color: #3e8e41
+#btngo:hover {
+  background-color: rgb(189, 66, 66);
 }
 
-#btngo:active 
-{
-  background-color: #4DC411;
+
+#gogbtn {
+  font-size: 14px;
+  background-color: #f92c2c;
+  color: #ffffff;
+  max-width: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px #999;
+}
+
+#gogbtn:hover {
+  background-color: #fc1313;
+}
+
+#gogbtn:active {
+  background-color: #fb8e8e;
   box-shadow: 0 4px #666;
   transform: translateY(3px);
 }
 
-#inbtn
-{
-    color: #FFFFFF;
+#facbtn {
+  display: inline-block;
+  font-size: 14px;
+  background-color: rgb(46, 58, 230);
+  color: #ffffff;
+  max-width: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px #999;
 }
 
-#gogbtn
-{
-    display: inline-block;
-    font-size:14px;
-    background-color:#F92C2C;
-    color:#FFFFFF;
-    max-width: 100px;
-    border: none;
-    border-radius: 50%;
-    padding: 12px;
-    box-shadow: 0 4px #999;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+#facbtn:hover {
+  background-color: #0016ff;
 }
 
-#gogbtn:hover 
-{
-    background-color: #FC1313
-}
-
-#gogbtn:active 
-{
-  background-color: #FB8E8E;
+#facbtn:active {
+  background-color: #6a74f7;
   box-shadow: 0 4px #666;
   transform: translateY(3px);
 }
 
-#facbtn
-{
-    display: inline-block;
-    font-size:14px;
-    background-color:rgb(46, 58, 230);
-    color:#FFFFFF;
-    max-width: 100px;
-    border: none;
-    border-radius: 50%;
-    padding: 12px;
-    box-shadow: 0 4px #999;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+#signup {
+  position: absolute;
+  top: 750px;
+  right: 980px;
+  height: 100px;
+  width: 200px;
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  background: -moz-linear-gradient(
+        top,
+        #dc143c 0%,
+        #be3749);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#dc143c),
+        to(#be3749));
+
+ 
 }
 
-#facbtn:hover 
-{
-    background-color: #0016FF
-}
+#login {
+  position: absolute;
+  top: 750px;
+  right: 680px;
+  height: 100px;
+  width: 200px;
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  background: -moz-linear-gradient(
+        top,
+        #dc143c 0%,
+        #be3749);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#dc143c),
+        to(#be3749));
 
-#facbtn:active 
-{
-  background-color: #6A74F7;
-  box-shadow: 0 4px #666;
-  transform: translateY(3px);
 }
+/*close button*/
+#close {
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    left: 280px;
+    font-size: 30px;
+    color: white;
+  }
